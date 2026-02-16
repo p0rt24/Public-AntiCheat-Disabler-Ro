@@ -1,0 +1,13 @@
+local oldwrap
+oldwrap = hookfunction(coroutine.wrap, function(func, ...)
+    if checkcaller() then 
+        return oldwrap(func, ...) 
+    end
+    local info = debug.getinfo(func, "n")
+
+    if info and info.name == "Task" then
+        warn("🚫 Заблокирована корутина 'Task'")
+        return task.wait(9e9)
+    end
+    return oldwrap(func, ...)
+end) 
