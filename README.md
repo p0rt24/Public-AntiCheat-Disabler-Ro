@@ -1,4 +1,2 @@
-originally this was a murders vs sherrifs roblox anticheat bypass  
-but it disables other functions of your env, do not use this rn  
-their anticheat only uses a coroutine.wrap with name: Task  
-*Когда то я обновлю это*  
+This repository is NOT archived, and i will update it sometimes.
+Changelog: Finally updated Murders Vs Sheriffs Bypass.
